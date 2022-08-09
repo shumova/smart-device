@@ -1,12 +1,18 @@
 .btn {
   display: inline-flex;
-  margin: 10px 0;
-  padding: 10px 20px;
+  align-items: center;
+  justify-content: center;
 
-  color: $color-default-white;
+  font-family: $ff-general;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  word-break: break-word;
 
-  background-color: $color-neon-blue;
   border: none;
+  border-radius: 3px;
   cursor: pointer;
 
   transition: opacity $trans-default;
@@ -26,5 +32,73 @@
     &:focus {
       opacity: 0.8;
     }
+
+    &:active {
+      opacity: 0.5;
+    }
   }
+}
+
+.btn--accent {
+  padding: 15px 27px 19px 27px;
+  font-size: 18px;
+  line-height: 21px;
+  color: $alice-blue;
+  background-color: $deep-sky-blue;
+
+  @include vp-767 {
+    padding: 12px 37.5px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.btn--more-icon {
+  min-width: 60px;
+  min-height: 60px;
+  background-image: url("../img/svg/arrow-more.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 4px;
+
+  @include vp-767 {
+    min-width: 40px;
+    min-height: 40px;
+  }
+}
+
+.btn--modal {
+  padding: 10px 16px 12px;
+  font-size: 14px;
+  line-height: 16px;
+  color: $alice-blue;
+  background-color: transparent;
+  border: 1px solid currentColor;
+
+  @include vp-767 {
+    padding: 10px 30px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.btn--secondary {
+  padding: 14px 12px;
+  font-size: 14px;
+  line-height: 16px;
+  color: $deep-sky-blue;
+  background-color: transparent;
+  border: 1px solid currentColor;
+
+  @include vp-767 {
+    padding: 8px 15px;
+  }
+}
+
+.btn--call-to-action {
+  padding: 15px 25px 11px;
+  font-size: 16px;
+  line-height: 19px;
+  color: $color-default-white;
+  background-color: $black-pearl-bg;
 }

@@ -17,6 +17,33 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
+
+    document.querySelector('[footer]').classList.remove('footer--has-no-js');
+
+    const accordionToggles = Array.from(document.querySelectorAll('[accordion-toggle]'));
+    const accordionContents = Array.from(document.querySelectorAll('[accordion-content]'));
+
+    if (accordionToggles && accordionToggles.length > 0 && accordionContents && accordionContents.length > 0) {
+      const removeActiveClass = () => {
+        accordionToggles.forEach((toggle) => toggle.classList.remove('is-active'));
+        accordionContents.forEach((content) => content.removeAttribute('style'));
+      };
+      const updateActiveClass = (i) => {
+        accordionToggles[i].classList.add('is-active');
+        accordionContents[i].style.maxHeight = accordionContents[i].scrollHeight + 'px';
+      };
+
+      for (let i = 0; i < accordionToggles.length; i++) {
+        accordionToggles[i].addEventListener('click', () => {
+          if (accordionToggles[i].classList.contains('is-active')) {
+            removeActiveClass();
+          } else {
+            removeActiveClass();
+            updateActiveClass(i);
+          }
+        });
+      }
+    }
   });
 });
 

@@ -1,0 +1,49 @@
+.contacts {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 100px;
+
+  @include vp-1023 {
+    gap: 4px 20px;
+  }
+}
+
+.contacts li {
+  list-style-type: none;
+}
+
+.contacts a {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: auto 1fr;
+  gap: 15px;
+  font-family: $ff-additional;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $alice-blue;
+
+  @include vp-1023 {
+    gap: 0;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}
+
+.contacts__item-name {
+  @include vp-1023 {
+    @include visually-hidden;
+  }
+}

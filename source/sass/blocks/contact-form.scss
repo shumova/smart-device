@@ -1,0 +1,121 @@
+.contact-form__header {
+  margin-bottom: 38px;
+  padding-right: 30px;
+}
+
+.contact-form h2 {
+  margin: 0;
+  margin-bottom: 4px;
+  padding: 0;
+  font-family: $ff-general;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.contact-form p {
+  margin: 0;
+  padding: 0;
+  font-family: $ff-additional;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.contact-form__fields {
+  margin-bottom: 20px;
+}
+
+.contact-form__fields label {
+  @include visually-hidden;
+}
+
+.contact-form__field:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  font-family: $ff-additional;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-default-white;
+  background: rgba(4, 20, 39, 0.15);
+  border: none;
+  border-radius: 3px;
+
+  &::placeholder {
+    color: inherit;
+  }
+}
+
+.contact-form input {
+  padding: 14px 15px;
+}
+
+.contact-form textarea {
+  padding: 22px 15px;
+}
+
+.contact-form__submit {
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+.contact-form__checkbox {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 9px;
+}
+
+.contact-form__checkbox input {
+  @include visually-hidden;
+}
+
+.contact-form__checkbox label {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  font-family: $ff-additional;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
+
+  opacity: 0.8;
+  cursor: pointer;
+
+  &::before {
+    grid-column: 1 / 2;
+    content: "";
+    width: 15px;
+    height: 15px;
+
+    border: 1px solid $color-default-white;
+    border-radius: 2px;
+  }
+}
+
+.contact-form__checkbox input:focus + label::before {
+  outline: auto;
+  outline-width: 1px;
+  outline-offset: 2px;
+}
+
+.contact-form__checkbox input:focus:not(:focus-visible) + label::before {
+  outline: none;
+}
+
+.contact-form__checkbox input:focus-visible + label::before {
+  outline: auto;
+  outline-width: 1px;
+  outline-offset: 2px;
+}
+
+.contact-form__checkbox input:checked + label::before {
+  background-image: url("../img/sprite/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 7px;
+}

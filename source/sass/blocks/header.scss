@@ -1,0 +1,67 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  min-height: 120px;
+  padding: 30px 0 35px;
+  background: linear-gradient(180deg, $black-pearl 84.9%, rgba(4, 24, 39, 0) 100%);
+  box-shadow: 0 4px 10px rgba(135, 135, 135, 0.1);
+
+  @include vp-1023 {
+    min-height: 100px;
+    padding: 20px 0 25px;
+  }
+
+  @include vp-767 {
+    min-height: 70px;
+    padding: 10px 0 15px;
+  }
+}
+
+.header__container {
+  display: grid;
+  grid-template-columns: 215px 1fr 225px;
+  gap: 20px;
+  align-items: start;
+
+  @include vp-1023 {
+    grid-template-columns: 215px 1fr;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 35px 1fr;
+  }
+}
+
+.header__logo {
+  @include vp-767 {
+    margin-top: 5px;
+  }
+}
+
+.header__contacts {
+  justify-self: center;
+  margin-top: 5px;
+
+  @include vp-1023 {
+    justify-self: end;
+    padding-right: 17px;
+    margin-top: 0;
+  }
+
+  @include vp-767 {
+    padding-right: 9px;
+  }
+}
+
+.header__call-btn {
+  justify-self: end;
+  margin-top: 5px;
+  margin-right: 60px;
+
+  @include vp-1023 {
+    display: none;
+  }
+}
