@@ -1,0 +1,162 @@
+.callback {
+  position: relative;
+  padding-top: 165px;
+  padding-bottom: 236px;
+  background-color: $deep-sky-blue-bg;
+
+  @include vp-1023 {
+    padding-top: 46px;
+    padding-bottom: 111px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 89px;
+  }
+}
+
+.callback h2 {
+  margin-bottom: 11px;
+  margin-left: -5px;
+
+  @include vp-1023 {
+    margin-bottom: 7px;
+    margin-left: 0;
+  }
+
+  @include vp-767 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+}
+
+.callback__container {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: auto 591px;
+  gap: #{"clamp(70px,10%,120px)"};
+
+  @include vp-1023 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.callback__form {
+  order: 1;
+  padding-right: 11px;
+  color: $color-default-white;
+
+  @include vp-1023 {
+    min-width: #{"min(100%, 670px)"};
+    justify-self: center;
+    padding-right: 0;
+  }
+}
+
+.callback__form form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 50px;
+  justify-items: start;
+
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.callback__form-header {
+  grid-column: span 2;
+  margin-bottom: 35px;
+
+  @include vp-1023 {
+    margin-bottom: 24px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 35px;
+  }
+}
+
+.callback__form-fields {
+  grid-column: span 2;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 30px;
+  margin-bottom: 29px;
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    margin-bottom: 23px;
+  }
+}
+
+.callback__form-field:nth-child(3n) {
+  grid-column: span 2;
+
+  @include vp-767 {
+    grid-column: 1 / -1;
+  }
+}
+
+.callback__form textarea {
+  @include vp-1023 {
+    padding: 30px 15px 15px;
+  }
+
+  @include vp-767 {
+    min-height: 180px;
+    padding-top: 22px;
+  }
+}
+
+.callback__form button[type="submit"] {
+  max-width: 265px;
+
+  @include vp-767 {
+    max-width: 100%;
+  }
+}
+
+.callback__form-checkbox {
+  max-width: 240px;
+  margin-top: 15px;
+
+  @include vp-1023 {
+    margin-top: 10px;
+    margin-left: -10px;
+  }
+
+  @include vp-767 {
+    max-width: 100%;
+    margin-left: 5px;
+  }
+}
+
+.callback__form-checkbox label {
+  &::before {
+    position: relative;
+    top: 7px;
+  }
+}
+
+.callback__form-decors {
+  margin-top: 80px;
+
+  @include vp-1023 {
+    display: none;
+  }
+}
+
+.callback__decors {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+
+  @include vp-1023 {
+    display: none;
+  }
+}

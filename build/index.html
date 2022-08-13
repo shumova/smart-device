@@ -13,97 +13,100 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page">
-    <div class="wrapper">
-      <div class="page-head">
-        <header class="page-head__header page__header header">
-          <div class="header__container container">
-            <a class="header__logo logo">
-              <svg
-              class="logo__img logo__img--header"
-              width="55"
-              height="55"
-              viewBox="0 0 55 55"
-              role="img"
-              aria-label="На главную Smart Device.">
-                <use href="img/sprite_auto.svg#logo-img"></use>
-              </svg>
-              <svg
-              class="logo__name logo__name--header"
-              width="145"
-              height="45"
-              viewBox="0 0 145 45"
-              aria-hidden="true"
-              focusable="false">
-                <use href="img/sprite_auto.svg#logo-name"></use>
-              </svg>
-            </a>
-            <ul class="header__contacts contacts">
-              <li>
-                <a href="mailto:info@sd.ru">
-                  <div class="contacts__item-decors" aria-hidden="true">
-                    <svg
-                      width="21"
-                      height="20"
-                      viewBox="0 0 21 20"
-                      aria-hidden="true"
-                      focusable="false">
-                      <use href="img/sprite_auto.svg#email"></use>
-                    </svg>
-                  </div>
-                  <span class="contacts__item-name">info@sd.ru</span>
-                </a>
-              </li>
-              <li>
-                <a href="tel:+74950005252">
-                  <div class="contacts__item-decors" aria-hidden="true">
-                    <svg
-                      width="21"
-                      height="20"
-                      viewBox="0 0 21 20"
-                      aria-hidden="true"
-                      focusable="false">
-                      <use href="img/sprite_auto.svg#phone"></use>
-                    </svg>
-                  </div>
-                  <span class="contacts__item-name">+7 (495) 000 52 52</span>
-                </a>
-              </li>
-            </ul>
-
-            <!-- Можно классы непосредственно на ссылку?? -->
-            <a href="#" class="header__call-btn btn btn--modal" data-open-modal="feedback">Заказать звонок</a>
-          </div>
-        </header>
-        <section class="page__intro intro">
-          <div class="intro__container container">
-            <div class="intro__inner-wrapper">
-              <h1>Печатные платы</h1>
-              <p>производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей</p>
-              <a href="#" class="intro__btn btn btn--accent">
-                <span class="intro__btn-wide">Получить бесплатную консультацию</span>
-                <span class="intro__btn-short">Бесплатная консультация</span>
+    <div class="page__wrapper wrapper">
+      <header class="page__header header">
+        <div class="header__container container">
+          <a class="header__logo logo">
+            <svg
+            class="logo__img logo__img--header"
+            width="55"
+            height="55"
+            viewBox="0 0 55 55"
+            role="img"
+            aria-label="На главную Smart Device.">
+              <use href="img/sprite_auto.svg#logo-img"></use>
+            </svg>
+            <svg
+            class="logo__name logo__name--header"
+            width="145"
+            height="45"
+            viewBox="0 0 145 45"
+            aria-hidden="true"
+            focusable="false">
+              <use href="img/sprite_auto.svg#logo-name"></use>
+            </svg>
+          </a>
+          <ul class="header__contacts contacts">
+            <li>
+              <a href="mailto:info@sd.ru">
+                <div class="contacts__item-decors" aria-hidden="true">
+                  <svg
+                    width="21"
+                    height="20"
+                    viewBox="0 0 21 20"
+                    aria-hidden="true"
+                    focusable="false">
+                    <use href="img/sprite_auto.svg#email"></use>
+                  </svg>
+                </div>
+                <span class="contacts__item-name">info@sd.ru</span>
               </a>
-            </div>
-          </div>
-        </section>
-        <div class="page-head__decors" aria-hidden="true">
-          <picture>
-            <source
-              srcset="img/intro-bg@1x.webp 1x, img/intro-bg@2x.webp 2x"
-              type="image/webp">
-            <!--
-              1х: 1920px; 2x: 3840px
-            -->
-            <img
-              src="img/intro-bg@1x.jpg"
-              srcset="img/intro-bg@2x.jpg 2x"
-              width="1920"
-              height="880"
-              alt="Крупный план печатной платы.">
-          </picture>
+            </li>
+            <li>
+              <a href="tel:+74950005252">
+                <div class="contacts__item-decors" aria-hidden="true">
+                  <svg
+                    width="21"
+                    height="20"
+                    viewBox="0 0 21 20"
+                    aria-hidden="true"
+                    focusable="false">
+                    <use href="img/sprite_auto.svg#phone"></use>
+                  </svg>
+                </div>
+                <span class="contacts__item-name">+7 (495) 000 52 52</span>
+              </a>
+            </li>
+          </ul>
+          <a href="#" class="header__call-btn btn btn--modal" data-open-modal="feedback">Заказать звонок</a>
         </div>
+      </header>
+      <section class="page__intro intro">
+        <div class="intro__container container">
+          <div class="intro__inner-wrapper">
+            <h1>Печатные платы</h1>
+            <p>производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей</p>
+            <a href="#callback-section" class="intro__btn btn btn--accent">
+              <span class="intro__btn-wide">Получить бесплатную консультацию</span>
+              <span class="intro__btn-short">Бесплатная консультация</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <div class="page__decors" aria-hidden="true">
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="img/intro-bg-size-s@1x.webp 1x, img/intro-bg-size-s@2x.webp 2x"
+            type="image/webp">
+          <source
+            media="(max-width: 1023px)"
+            srcset="img/intro-bg-size-m@1x.webp 1x, img/intro-bg-size-m@2x.webp 2x"
+            type="image/webp">
+          <source
+            srcset="img/intro-bg@1x.webp 1x, img/intro-bg@2x.webp 2x"
+            type="image/webp">
+          <!--
+            1х: 1920px; 2x: 3840px
+          -->
+          <img
+            src="img/intro-bg@1x.jpg"
+            srcset="img/intro-bg@2x.jpg 2x"
+            width="1920"
+            height="880"
+            alt="Крупный план печатной платы.">
+        </picture>
       </div>
-
       <main class="main">
         <section class="main__features features">
           <div class="container">
@@ -176,24 +179,250 @@
             </ul>
           </div>
         </section>
-
-        <!-- <section class="main-section">
-          <h2>О компании</h2>
-          <h3>Производство печатных плат</h3>
-          <p>Мы подбираем определенную фабрику,поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.
-          </p>
-
-          <a href="#" class="btn btn--accent btn--more-icon">
-            <span class="visually-hidden">Подробнее.</span>
-          </a>
-
-          <a href="#" class="btn btn--secondary">Подробнее</a>
-          <a href="#" class="btn btn--call-to-action">Задать вопрос</a>
-
-        </section> -->
-
+        <section class="main__about about main-section">
+          <div class="about__container container">
+            <div class="about__content has-no-js" data-has-no-js>
+              <h2>О компании</h2>
+              <div class="about__description" data-more-content>
+                <p>Мы&nbsp;поставляем электронные комплектующие, производим печатные платы и&nbsp;предоставляем мировые технологии с&nbsp;1997&nbsp;года. Выполняем срочные заказы и&nbsp;пилотные образцы до&nbsp;10&nbsp;дней.</p>
+                <p>Наши поставщики&nbsp;&mdash; мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.<br> Печатные платы и&nbsp;комплектующие Service Devices применяются на&nbsp;предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
+                <p>Smart Device&nbsp;&mdash; это команда профессионалов. Через нас прошло более 1&nbsp;000&nbsp;000&nbsp;клиентов, 70% из&nbsp;которых продолжают сотрудничество по&nbsp;сей день. На&nbsp;данный момент насчитывается более 14&nbsp;офисов по&nbsp;всей стране и&nbsp;20&nbsp;городов присутствия.</p>
+                <p>Мы&nbsp;стремимся к&nbsp;постоянному развитию и&nbsp;повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и&nbsp;время наших клиентов.</p>
+              </div>
+              <button class="about__more-btn btn btn--secondary" data-more-toggle aria-expanded="false" aria-label="Показать">
+                <span class="about__more-btn-off" aria-hidden="true">Подробнее</span>
+                <span class="about__more-btn-active" aria-hidden="true">Свернуть</span>
+              </button>
+            </div>
+            <div class="about__decors" aria-hidden="true">
+              <picture>
+                <source
+                  srcset="img/2022-year@1x.webp 1x, img/2022-year@2x.webp 2x"
+                  type="image/webp">
+                <!--
+                  1х: 150px; 2x: 300px
+                -->
+                <img
+                  src="img/2022-year@1x.png"
+                  srcset="img/2022-year@2x.png 2x"
+                  width="150"
+                  height="320"
+                  loading="lazy"
+                  alt="2022 год.">
+              </picture>
+            </div>
+          </div>
+        </section>
+        <section class="main__categories categories main-section">
+          <div class="categories__container container">
+            <div class="categories__title-wide">
+              <h2>Smart Device предлагает следующие товары и&nbsp;услуги</h2>
+            </div>
+            <div class="categories__title-short">
+              <h2>Товары и&nbsp;услуги Smart Device</h2>
+            </div>
+            <ul>
+              <li>
+                <div class="categories__item">
+                  <a href="#">
+                    <div class="categories__item-content">
+                      <h3>Производство печатных плат</h3>
+                    </div>
+                    <div class="categories__link-decors" aria-hidden="true">
+                      <svg
+                        width="5"
+                        height="10"
+                        viewBox="0 0 5 10"
+                        aria-hidden="true"
+                        focusable="false">
+                        <use href="img/sprite_auto.svg#arrow-more"></use>
+                      </svg>
+                    </div>
+                    <div class="categories__item-decors categories__item-decors--1" aria-hidden="true">
+                      <picture>
+                        <source
+                          media="(max-width: 767px)"
+                          srcset="img/production-size-s@1x.webp 1x, img/production-size-s@2x.webp 2x"
+                          type="image/webp">
+                        <source
+                          media="(max-width: 1023px)"
+                          srcset="img/production-size-m@1x.webp 1x, img/production-size-m@2x.webp 2x"
+                          type="image/webp">
+                        <source
+                          srcset="img/categories-bg@1x.webp 1x, img/categories-bg@2x.webp 2x"
+                          type="image/webp">
+                        <!--
+                          1х: 1494px; 2x: 2988px
+                        -->
+                        <img
+                          src="img/categories-bg@1x.jpg"
+                          srcset="img/categories-bg@2x.jpg 2x"
+                          width="1494"
+                          height="817"
+                          loading="lazy"
+                          alt="Крупный план печатной платы.">
+                      </picture>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="categories__item">
+                  <a href="#">
+                    <div class="categories__item-content">
+                      <h3>Монтаж печатных плат</h3>
+                    </div>
+                    <div class="categories__link-decors" aria-hidden="true">
+                      <svg
+                        width="5"
+                        height="10"
+                        viewBox="0 0 5 10"
+                        aria-hidden="true"
+                        focusable="false">
+                        <use href="img/sprite_auto.svg#arrow-more"></use>
+                      </svg>
+                    </div>
+                    <div class="categories__item-decors categories__item-decors--2" aria-hidden="true">
+                      <picture>
+                        <source
+                          media="(max-width: 767px)"
+                          srcset="img/mounting-size-s@1x.webp 1x, img/mounting-size-s@1x.webp 2x"
+                          type="image/webp">
+                        <source
+                          media="(max-width: 1023px)"
+                          srcset="img/mounting-size-m@1x.webp 1x, img/mounting-size-m@2x.webp 2x"
+                          type="image/webp">
+                        <source
+                          srcset="img/categories-bg@1x.webp 1x, img/categories-bg@2x.webp 2x"
+                          type="image/webp">
+                        <!--
+                          1х: 1494px; 2x: 2988px
+                        -->
+                        <img
+                          src="img/categories-bg@1x.jpg"
+                          srcset="img/categories-bg@2x.jpg 2x"
+                          width="1494"
+                          height="817"
+                          loading="lazy"
+                          alt="Крупный план печатной платы.">
+                      </picture>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="categories__item">
+                  <a href="#">
+                    <div class="categories__item-content">
+                      <h3>Комплектующие для&nbsp;светотехники</h3>
+                    </div>
+                    <div class="categories__link-decors" aria-hidden="true">
+                      <svg
+                        width="5"
+                        height="10"
+                        viewBox="0 0 5 10"
+                        aria-hidden="true"
+                        focusable="false">
+                        <use href="img/sprite_auto.svg#arrow-more"></use>
+                      </svg>
+                    </div>
+                    <div class="categories__item-decors categories__item-decors--3" aria-hidden="true">
+                      <picture>
+                        <source
+                          media="(max-width: 767px)"
+                          srcset="img/accessories-size-s@1x.webp 1x, img/accessories-size-s@2x.webp 2x"
+                          type="image/webp">
+                        <source
+                          media="(max-width: 1023px)"
+                          srcset="img/accessories-size-m@1x.webp 1x, img/accessories-size-m@2x.webp 2x"
+                          type="image/webp">
+                        <source
+                          srcset="img/categories-bg@1x.webp 1x, img/categories-bg@2x.webp 2x"
+                          type="image/webp">
+                        <!--
+                          1х: 1494px; 2x: 2988px
+                        -->
+                        <img
+                          src="img/categories-bg@1x.jpg"
+                          srcset="img/categories-bg@2x.jpg 2x"
+                          width="1494"
+                          height="817"
+                          loading="lazy"
+                          alt="Крупный план печатной платы.">
+                      </picture>
+                    </div>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="main__callback callback main-section" id="callback-section">
+          <div class="callback__container container">
+            <div class="callback__form contact-form">
+              <form action="https://echo.htmlacademy.ru/" method="post">
+                <div class="callback__form-header contact-form__header">
+                  <h2>Остались вопросы? Задайте их нам!</h2>
+                  <p>Мы проконсультируем Вас бесплатно</p>
+                </div>
+                <div class="callback__form-fields contact-form__fields">
+                  <div class="callback__form-field contact-form__field">
+                    <input id="callback-name" name="name" type="text" placeholder="Имя" pattern="[A-Za-zА-Яа-яЁё'- ]{1,}" title="Имя может содержать только буквы." required>
+                    <label for="callback-name">Введите ваше имя.</label>
+                  </div>
+                  <div class="callback__form-field contact-form__field">
+                    <input id="callback-phone" name="phone" type="tel" data-tel-input placeholder="Телефон" pattern="\+7\s?[\(]{0,1}[0-9]{3}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" title="Номер должен содержать 10 цифр." required>
+                    <label for="callback-phone">Введите ваш номер телефона.</label>
+                  </div>
+                  <div class="callback__form-field contact-form__field">
+                    <textarea name="question" id="callback-question" rows="5" placeholder="Ваш вопрос"></textarea>
+                  </div>
+                </div>
+                <button type="submit" data-submit>Задать вопрос</button>
+                <div class="callback__form-checkbox contact-form__checkbox">
+                  <input id="callback-agreement" name="agreement" type="checkbox" required checked>
+                  <label for="callback-agreement">Я&nbsp;согласен на&nbsp;обработку персональных данных</label>
+                </div>
+              </form>
+            </div>
+            <div class="callback__form-decors" aria-hidden="true">
+              <picture>
+                <source
+                  srcset="img/paper-airplane@1x.webp 1x, img/paper-airplane@2x.webp 2x"
+                  type="image/webp">
+                <!--
+                  1х: 510px; 2x: 1020px
+                -->
+                <img
+                  src="img/paper-airplane@1x.jpg"
+                  srcset="img/paper-airplane@2x.jpg 2x"
+                  width="510"
+                  height="285"
+                  loading="lazy"
+                  alt="Бумажный самолётик.">
+              </picture>
+            </div>
+          </div>
+          <div class="callback__decors" aria-hidden="true">
+            <picture>
+              <source
+                srcset="img/callback-form-bg@1x.webp 1x, img/callback-form-bg@2x.webp 2x"
+                type="image/webp">
+              <!--
+                1х: 1920px; 2x: 3840px
+              -->
+              <img
+                src="img/callback-form-bg@1x.jpg"
+                srcset="img/callback-form-bg@2x.jpg 2x"
+                width="1920"
+                height="840"
+                loading="lazy"
+                alt="Голубой фон.">
+            </picture>
+          </div>
+        </section>
       </main>
-      <footer class="footer footer--has-no-js" footer>
+      <footer class="page__footer footer has-no-js" data-has-no-js>
         <div class="footer__container container">
           <div class="footer__column footer__column--logo-social">
             <a class="footer__logo logo">
@@ -259,38 +488,46 @@
             </ul>
           </div>
           <div class="footer__column">
-            <h2>Разделы сайта</h2>
-            <button class="footer__accordion-toggle btn" accordion-toggle aria-expanded="false" aria-controls="nav" aria-label="Показать разделы сайта"></button>
-            <nav class="footer__accordion-content footer__nav nav" accordion-content id="nav">
+            <div class="footer__column-header">
+              <h2>Разделы сайта</h2>
+              <button class="footer__accordion-toggle btn" data-accordion-toggle aria-expanded="false" aria-controls="nav" aria-label="Показать">
+                <span></span>
+              </button>
+            </div>
+            <nav class="footer__accordion-content footer__nav nav" data-accordion-content id="nav">
               <ul>
                 <li>
-                  <a href="#">О&nbsp;Компаниии</a>
-                </li>
-                <li class="footer__nav-accessories">
-                  <a href="#">Комплектующие</a>
+                  <a href="#">О&nbsp;Компании</a>
                 </li>
                 <li>
                   <a href="#">Продукты</a>
                 </li>
-                <li class="footer__nav-delivery">
-                  <a href="#">Доставка</a>
-                </li>
                 <li>
                   <a href="#">Производство печатных плат</a>
                 </li>
-                <li class="footer__nav-contacts">
-                  <a href="#">Контакты</a>
-                </li>
                 <li>
                   <a href="#">Монтаж печатных плат</a>
+                </li>
+                <li>
+                  <a href="#">Комплектующие</a>
+                </li>
+                <li>
+                  <a href="#">Доставка</a>
+                </li>
+                <li>
+                  <a href="#">Контакты</a>
                 </li>
               </ul>
             </nav>
           </div>
           <div class="footer__column">
-            <h2>Наш офис</h2>
-            <button class="footer__accordion-toggle btn" accordion-toggle aria-expanded="true" aria-controls="office" aria-label="Показать адрес и контакты"></button>
-            <div class="footer__accordion-content footer__office" accordion-content id="office">
+            <div class="footer__column-header">
+              <h2>Наш офис</h2>
+              <button class="footer__accordion-toggle btn" data-accordion-toggle aria-expanded="false" aria-controls="office" aria-label="Показать">
+                <span></span>
+              </button>
+            </div>
+            <div class="footer__accordion-content footer__office" data-accordion-content id="office">
               <address>г. Мытищи, Олимпийский проспект, д.10</address>
               <div class="footer__office-phones">
                 <ul>
@@ -318,35 +555,37 @@
         <div class="modal__content">
           <div class="modal__form contact-form">
             <form action="https://echo.htmlacademy.ru/" method="post">
-              <div class="contact-form__header">
+              <div class="modal__form-header contact-form__header">
                 <h2>Закажите звонок</h2>
                 <p>Оставьте контакты, мы&nbsp;проконсультируем вас бесплатно в&nbsp;удобное время</p>
               </div>
-              <div class="contact-form__fields">
-                <div class="contact-form__field">
-                  <input id="name" name="name" type="text" placeholder="Имя" data-name pattern="[A-Za-zА-Яа-яЁё]{1,}" required>
-                  <label for="name">Введите ваше имя.</label>
+              <div class="modal__form-fields contact-form__fields">
+                <div class="modal__form-field contact-form__field">
+                  <input id="modal-name" name="name" type="text" placeholder="Имя" data-name-input pattern="[A-Za-zА-Яа-яЁё'- ]{1,}" title="Имя может содержать только буквы." required>
+                  <label for="modal-name">Введите ваше имя.</label>
                 </div>
-                <div class="contact-form__field">
-                  <input id="phone" name="phone" type="tel" data-phone pattern="+7\(\d{3}\) \d{3}\-\d{4}" placeholder="Телефон" required>
-                  <label for="phone">Введите ваш номер телефона.</label>
+                <div class="modal__form-field contact-form__field">
+                  <input id="modal-phone" name="phone" type="tel" data-tel-input placeholder="Телефон" pattern="\+7\s?[\(]{0,1}[0-9]{3}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" title="Номер должен содержать 10 цифр." required>
+                  <label for="modal-phone">Введите ваш номер телефона.</label>
                 </div>
-                <div class="contact-form__field">
-                  <textarea name="question" id="question" rows="5">Ваш вопрос</textarea>
+                <div class="modal__form-field contact-form__field">
+                  <textarea name="question" id="modal-question" rows="5" placeholder="Ваш вопрос"></textarea>
                 </div>
               </div>
-
-              <!-- Можно классы непосредственно на кнопку ?? -->
-              <button class="contact-form__submit btn btn--call-to-action" type="submit" data-submit>Отправить</button>
-
-              <div class="contact-form__checkbox">
-                <input id="agreement" name="agreement" type="checkbox" required checked>
-                <label for="agreement">Я&nbsp;согласен на&nbsp;обработку персональных данных</label>
+              <button type="submit" data-submit>Отправить</button>
+              <div class="modal__form-checkbox contact-form__checkbox">
+                <input id="modal-agreement" name="agreement" type="checkbox" required checked>
+                <label for="modal-agreement">Я&nbsp;согласен на&nbsp;обработку персональных данных</label>
               </div>
             </form>
           </div>
           <button class="modal__close-btn btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="20" height="20">
+            <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            aria-hidden="true"
+            focusable="false">
               <use xlink:href="img/sprite_auto.svg#icon-close"></use>
             </svg>
           </button>

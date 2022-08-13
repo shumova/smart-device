@@ -1,22 +1,18 @@
 .container {
   width: 100%;
-  max-width: 1920px;
+  max-width: calc(1222px + 14%);
   margin: 0 auto;
-  padding-right: 350px;
-  padding-left: 350px;
-
-  @include vp-1439 {
-    padding-right: 150px;
-    padding-left: 150px;
-  }
+  padding-right: 7%;
+  padding-left: 7%;
+  transition: all 0.4s ease-out;
 
   @include vp-1023 {
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 6.5%;
+    padding-left: 6.5%;
   }
 
   @include vp-767 {
-    padding-right: 25px;
-    padding-left: 25px;
+    padding-right: #{"min(50px, 7.8%)"};
+    padding-left: #{"min(50px, 7.8%)"};
   }
 }

@@ -1,0 +1,97 @@
+.about {
+  background-color: $alice-blue-bg;
+}
+
+.about__container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding-bottom: 100px;
+
+  @include vp-1023 {
+    padding-bottom: 80px;
+  }
+}
+
+.about__content {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  align-self: start;
+}
+
+.about__content h2 {
+  margin-bottom: 12px;
+
+  @include vp-1023 {
+    margin-top: -4px;
+  }
+}
+
+.about__description {
+  max-height: 152px;
+  margin-bottom: 40px;
+  overflow-y: hidden;
+  transition: max-height 0.3s ease-out;
+
+  @include vp-1023 {
+    max-height: 258px;
+    margin-bottom: 18px;
+  }
+
+  @include vp-767 {
+    max-height: 205px;
+  }
+}
+
+.about__content p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.about__more-btn {
+  min-width: 180px;
+  max-width: 400px;
+
+  @include vp-767 {
+    min-width: 160px;
+  }
+}
+
+.about__more-btn-active {
+  display: none;
+}
+
+.about__decors {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  align-self: start;
+  margin-right: 100px;
+
+  @include vp-1023 {
+    margin-right: 30px;
+    margin-left: -5px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+// .about__more-btn.is-active
+
+.about__more-btn.is-active .about__more-btn-active {
+  display: block;
+}
+
+.about__more-btn.is-active .about__more-btn-off {
+  display: none;
+}
+
+// .about__content.has-no-js
+
+.about__content.has-no-js .about__description {
+  max-height: initial;
+  overflow-y: initial;
+}
+
+.about__content.has-no-js .about__more-btn {
+  display: none;
+}

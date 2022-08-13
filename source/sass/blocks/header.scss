@@ -5,7 +5,7 @@
   z-index: 10;
   width: 100%;
   min-height: 120px;
-  padding: 30px 0 35px;
+  padding: 30px 0 #{"max(35px,1.8%)"};
   background: linear-gradient(180deg, $black-pearl 84.9%, rgba(4, 24, 39, 0) 100%);
   box-shadow: 0 4px 10px rgba(135, 135, 135, 0.1);
 
@@ -23,7 +23,7 @@
 .header__container {
   display: grid;
   grid-template-columns: 215px 1fr 225px;
-  gap: 20px;
+  gap: #{"clamp(40px,4%,80px)"};
   align-items: start;
 
   @include vp-1023 {
@@ -42,13 +42,18 @@
 }
 
 .header__contacts {
-  justify-self: center;
-  margin-top: 5px;
+  max-height: 100px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    background-color: transparent;
+  }
 
   @include vp-1023 {
     justify-self: end;
     padding-right: 17px;
-    margin-top: 0;
   }
 
   @include vp-767 {

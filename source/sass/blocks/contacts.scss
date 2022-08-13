@@ -1,9 +1,11 @@
 .contacts {
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px 100px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+  gap: 4px #{"clamp(10px,14.5%,100px)"};
+  user-select: none;
 
   @include vp-1023 {
     gap: 4px 20px;
@@ -11,13 +13,16 @@
 }
 
 .contacts li {
+  max-width: 240px;
   list-style-type: none;
+  word-break: break-word;
 }
 
 .contacts a {
   display: grid;
   padding: 10px;
   grid-template-columns: auto 1fr;
+  align-items: center;
   gap: 15px;
   font-family: $ff-additional;
   font-style: normal;
@@ -45,5 +50,14 @@
 .contacts__item-name {
   @include vp-1023 {
     @include visually-hidden;
+  }
+}
+
+.contacts__item-decors {
+  margin-top: 5px;
+  align-self: start;
+
+  @include vp-1023 {
+    margin-top: 0;
   }
 }

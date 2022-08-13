@@ -1,7 +1,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 html,
@@ -19,6 +19,8 @@ html {
   line-height: 24px;
   font-family: $ff-general;
   color: $black-pearl;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -45,6 +47,7 @@ video {
   display: block;
   max-width: 100%;
   height: auto;
+  user-select: none;
 }
 
 textarea {
@@ -74,6 +77,23 @@ textarea {
 
   &:invalid {
     box-shadow: none;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
   }
 }
 
@@ -127,4 +147,5 @@ button,
 [type="reset"],
 [type="submit"] {
   appearance: none;
+  user-select: none;
 }

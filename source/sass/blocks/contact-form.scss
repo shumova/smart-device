@@ -1,36 +1,9 @@
-.contact-form__header {
-  margin-bottom: 38px;
-  padding-right: 30px;
-}
-
-.contact-form h2 {
-  margin: 0;
-  margin-bottom: 4px;
-  padding: 0;
-  font-family: $ff-general;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 42px;
-}
-
-.contact-form p {
-  margin: 0;
-  padding: 0;
-  font-family: $ff-additional;
-  font-size: 16px;
-  line-height: 22px;
-}
-
-.contact-form__fields {
-  margin-bottom: 20px;
+.contact-form__field {
+  user-select: none;
 }
 
 .contact-form__fields label {
   @include visually-hidden;
-}
-
-.contact-form__field:not(:last-child) {
-  margin-bottom: 20px;
 }
 
 .contact-form input,
@@ -40,13 +13,13 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  color: $color-default-white;
+  color: $black-pearl;
   background: rgba(4, 20, 39, 0.15);
   border: none;
   border-radius: 3px;
 
   &::placeholder {
-    color: inherit;
+    color: $color-default-white;
   }
 }
 
@@ -58,7 +31,9 @@
   padding: 22px 15px;
 }
 
-.contact-form__submit {
+.contact-form button[type="submit"] {
+  @include btn;
+  @include btn--call-to-action;
   width: 100%;
   margin-bottom: 14px;
 }
@@ -66,7 +41,17 @@
 .contact-form__checkbox {
   display: inline-block;
   vertical-align: middle;
-  padding-left: 9px;
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
 }
 
 .contact-form__checkbox input {
@@ -76,12 +61,14 @@
 .contact-form__checkbox label {
   display: grid;
   grid-template-columns: auto 1fr;
+  align-items: start;
   gap: 10px;
   font-family: $ff-additional;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   color: $color-default-white;
+  user-select: none;
 
   opacity: 0.8;
   cursor: pointer;
