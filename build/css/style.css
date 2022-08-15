@@ -1618,30 +1618,6 @@ button,
   max-width: initial;
   width: auto;
   height: 100%;
-  -webkit-transform: scale(1.27);
-  -ms-transform: scale(1.27);
-  transform: scale(1.27);
-}
-
-.categories__item-decors--1 img {
-  left: -9.6%;
-  top: -5%;
-}
-
-.categories__item-decors--2 img {
-  top: -6%;
-  left: 50%;
-  -webkit-transform: translateX(-46.8%) scale(1.26);
-  -ms-transform: translateX(-46.8%) scale(1.26);
-  transform: translateX(-46.8%) scale(1.26);
-}
-
-.categories__item-decors--3 img {
-  left: 50%;
-  top: -4%;
-  -webkit-transform: translateX(-77.3%) scale(1.27);
-  -ms-transform: translateX(-77.3%) scale(1.27);
-  transform: translateX(-77.3%) scale(1.27);
 }
 
 .callback {
@@ -2246,30 +2222,6 @@ button,
     height: auto;
   }
 
-  .categories__item-decors--1 img {
-    left: 0;
-    top: 0;
-    -webkit-transform: none;
-    -ms-transform: none;
-    transform: none;
-  }
-
-  .categories__item-decors--2 img {
-    left: 0;
-    top: 0;
-    -webkit-transform: none;
-    -ms-transform: none;
-    transform: none;
-  }
-
-  .categories__item-decors--3 img {
-    left: 0;
-    top: 0;
-    -webkit-transform: none;
-    -ms-transform: none;
-    transform: none;
-  }
-
   .callback {
     padding-top: 46px;
     padding-bottom: 111px;
@@ -2579,11 +2531,6 @@ button,
   .categories__link-decors {
     min-width: 40px;
     min-height: 40px;
-  }
-
-  .categories__item-decors img {
-    width: auto;
-    height: 100%;
   }
 
   .callback {

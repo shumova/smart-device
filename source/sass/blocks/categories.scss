@@ -169,50 +169,9 @@
   max-width: initial;
   width: auto;
   height: 100%;
-  transform: scale(1.27);
 
   @include vp-1023 {
     width: 100%;
     height: auto;
-  }
-
-  @include vp-767 {
-    width: auto;
-    height: 100%;
-  }
-}
-
-.categories__item-decors--1 img {
-  left: -9.6%;
-  top: -5%;
-
-  @include vp-1023 {
-    left: 0;
-    top: 0;
-    transform: none;
-  }
-}
-
-.categories__item-decors--2 img {
-  top: -6%;
-  left: 50%;
-  transform: translateX(-46.8%) scale(1.26);
-
-  @include vp-1023 {
-    left: 0;
-    top: 0;
-    transform: none;
-  }
-}
-
-.categories__item-decors--3 img {
-  left: 50%;
-  top: -4%;
-  transform: translateX(-77.3%) scale(1.27);
-
-  @include vp-1023 {
-    left: 0;
-    top: 0;
-    transform: none;
   }
 }
