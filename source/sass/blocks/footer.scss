@@ -77,6 +77,9 @@
   @include vp-767 {
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
+    padding-right: #{"min(50px, 7.8%)"};
+    padding-left: #{"min(50px, 7.8%)"};
   }
 }
 
@@ -105,13 +108,17 @@
 }
 
 .footer__social {
+  max-width: 80%;
   margin-left: 15px;
 
   @include vp-1023 {
+    max-width: 48%;
     margin-top: 10px;
   }
 
   @include vp-767 {
+    max-width: 80%;
+    justify-content: center;
     margin-left: 4px;
     margin-bottom: 23px;
   }
@@ -245,7 +252,8 @@
 }
 
 .footer__nav li:nth-child(2n),
-.footer__nav li:nth-child(3n) {
+.footer__nav li:nth-child(3n),
+.footer__nav li:nth-child(4n) {
   grid-column: 1 / 2;
 }
 
@@ -259,9 +267,15 @@
   }
 }
 
+.footer__nav li:nth-child(2n + 10),
+.footer__nav li:nth-child(3n + 10),
+.footer__nav li:nth-child(4n + 10),
 .footer__nav li:nth-child(5n + 10),
-.footer__nav li:nth-child(4n) {
-  grid-column: 1 / 2;
+.footer__nav li:nth-child(6n + 10),
+.footer__nav li:nth-child(7n + 10),
+.footer__nav li:nth-child(8n),
+.footer__nav li:nth-child(9n) {
+  grid-column: auto;
 }
 
 .footer__office address {
