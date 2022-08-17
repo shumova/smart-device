@@ -19,30 +19,28 @@
 }
 
 .features ul {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
-  row-gap: 30px;
+  gap: 30px;
   margin: 0;
   padding: 0;
 
   @include vp-767 {
-    justify-content: center;
+    grid-template-columns: 1fr;
+    justify-items: center;
   }
 }
 
 .features li {
-  width: 48.8%;
   min-height: 300px;
   list-style-type: none;
 
   @include vp-1023 {
-    width: 47.8%;
     min-height: 360px;
   }
 
   @include vp-767 {
-    width: 100%;
     max-width: 450px;
 
     &:nth-child(3n-2),

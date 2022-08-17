@@ -43,8 +43,8 @@
 }
 
 .categories ul {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px #{"clamp(40px, 7%, 86px)"};
   margin: 0;
   margin-right: auto;
@@ -53,6 +53,7 @@
   user-select: none;
 
   @include vp-1023 {
+    grid-template-columns: 1fr;
     gap: 30px;
   }
 
@@ -64,11 +65,10 @@
 .categories li {
   position: relative;
   list-style-type: none;
-  width: 28.6%;
-  padding-top: 53.2%;
+  width: 100%;
+  padding-top: 185.5%;
 
   @include vp-1023 {
-    width: 100%;
     padding-top: 37.3%;
   }
 
