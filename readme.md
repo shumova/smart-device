@@ -1,7 +1,7 @@
 <img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/htmlcss/logo-for-github-2.png">Examination project for the «[Front-end Developer](https://assets.htmlacademy.ru/certificates/profession/31/1522579.pdf)» profession course <br>from [HTML Academy](https://htmlacademy.ru).
 -
 
-- `Node.js` is required to run the project
+- `Node.js 14` is required to run the project
 
 Commands:
 - Install dependencies  - `npm i`
