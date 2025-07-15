@@ -2,18 +2,19 @@
 -
 
 ### 📝 Description
-Online store of electronics. Semantics and accessibility, states for all interactive elements, grid / flex, pixel perfect, code optimization
+A website of printed circuit boards manufacturer. Adaptive cross-browser layout, working with JS and without, automating assembly in Gulp: image optimization, using WebP, svg sprite, minification of styles, scripts, html
 
 ### 🛠️ Technologies 
-HTML, CSS, BEM
+HTML, SASS, BEM, VanillaJS, Webpack, Gulp
 
 ### 🔗 Links 
-> **Live Site**: [shumova.space/device](https://shumova.space/device/)   
-> **Source Code**: [github.com/shumova/device](https://github.com/shumova/device)
+> **Live Site**: [shumova.space/smart-device](https://shumova.space/smart-device/)  
+> **Source Code**: [github.com/shumova/smart-device](https://github.com/shumova/smart-device) 
 
 ---
 
-<img width="5400" height="3400" alt="image" src="https://github.com/user-attachments/assets/cc293a78-16ad-4f09-ae9a-7f355595a288" />
+<img width="5400" height="3400" alt="image" src="https://github.com/user-attachments/assets/84cc3e9e-059a-45b5-89ba-d2b89e676fca" />
+
 
 ---
 
